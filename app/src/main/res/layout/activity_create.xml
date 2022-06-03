@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background" />
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/purple_200"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <EditText
+        android:id="@+id/cr_us"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#8F8E8E"
+        android:background="@drawable/shape"
+        android:drawableStart="@drawable/ic_baseline_account"
+        android:hint="   email"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create" />
+    <EditText
+        android:id="@+id/cr_name"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#8F8E8E"
+        android:textColor="@color/black"
+        android:background="@drawable/shape"
+        android:drawableStart="@drawable/ic_baseline_account"
+        android:hint="   name"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cr_us" />
+    <EditText
+        android:id="@+id/cr_address"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#8F8E8E"
+        android:background="@drawable/shape"
+        android:drawableStart="@drawable/ic_baseline_address"
+        android:hint="   address"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/cr_name" />
+    <EditText
+        android:id="@+id/cr_phonenumber"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#8F8E8E"
+        android:background="@drawable/shape"
+        android:drawableStart="@drawable/ic_baseline_local_phone"
+        android:hint="  Phone number"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cr_address" />
+
+    <EditText
+        android:id="@+id/cr_pass"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+       android:hint="   PassWord"
+        android:textColor="@color/black"
+        android:textColorHint="#8F8E8E"
+        android:padding="16dp"
+        android:drawableStart="@drawable/ic_baseline_pass"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        app:layout_constraintTop_toBottomOf="@+id/cr_phonenumber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <EditText
+        android:id="@+id/cr_cfpass"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:hint="  Repeat PassWord"
+        android:padding="16dp"
+        android:textColorHint="#8F8E8E"
+        android:drawableStart="@drawable/ic_baseline_pass"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        app:layout_constraintTop_toBottomOf="@+id/cr_pass"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/cr_cfpass">
+        <Button
+            android:id="@+id/cr_dk"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#DCB61FF6"
+
+android:textColor="@color/white"
+
+            android:text="Đăng ký"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="30dp"
+
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

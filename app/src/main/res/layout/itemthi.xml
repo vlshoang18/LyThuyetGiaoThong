@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:id="@+id/item_type_law"
+    android:background="@drawable/border_item_function"
+    app:backgroundTint="#353434"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="2dp">
+    <ImageView
+        android:id="@+id/img_item_thi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/exam"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/tv_item_thi"
+        android:paddingBottom="4dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/img_item_thi"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="italic|bold"
+        android:gravity="center"
+        android:textColor="#656363"
+        />
+    <TextView
+        android:id="@+id/tv_item_thi2"
+        android:paddingBottom="4dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_thi"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_thi"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic|bold"
+        android:gravity="center"
+        android:text="25 câu"
+        android:textColor="#656363"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
