@@ -2,10 +2,8 @@ package com.example.lythuyetgiaothong.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +14,8 @@ import com.example.lythuyetgiaothong.R;
 import com.example.lythuyetgiaothong.api.ApiClient;
 import com.example.lythuyetgiaothong.models.UserLogin;
 import com.example.lythuyetgiaothong.models.UserResponse;
+import com.example.lythuyetgiaothong.utils.Contants;
+import com.example.lythuyetgiaothong.utils.StoreUtils;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -64,8 +64,7 @@ public class LoginActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
-//                    StoreUtils.save(LoginActivity.this, Contants.email, mail);
-//                    StoreUtils.save(LoginActivity.this, Contants.id, String.valueOf(response.body().getId()));
+                    StoreUtils.save(LoginActivity.this, Contants.id, String.valueOf(response.body().getId()));
                     finish();
                 }
                 else
@@ -86,8 +85,8 @@ public class LoginActivity extends AppCompatActivity {
     private void Initui() {
        us = findViewById(R.id.lg_us);
        pw = findViewById(R.id.lg_pass);
-       sign = findViewById(R.id.lg_dn);
-       signup =findViewById(R.id.lg_dk);
+       sign = findViewById(R.id.bt_edtpf);
+       signup =findViewById(R.id.bt_back);
 
 
     }

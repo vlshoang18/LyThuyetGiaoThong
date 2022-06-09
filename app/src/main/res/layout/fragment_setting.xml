@@ -32,13 +32,13 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/lythuyet" />
+         />
 
     <TextView
         android:id="@+id/st_name"
@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="45dp"
-        android:text="Võ Lương Sỹ Hoàng"
+
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintStart_toEndOf="@+id/st_name"
@@ -106,7 +106,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:text="vlshoangc10.pbchau@gmail.com"
+
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@+id/st_tv_name"
@@ -117,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:text="0946014129"
+
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@+id/st_tv_email"
@@ -128,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:text="63 ngô đến nha trang khánh hòa"
+
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@+id/st_tv_number"
@@ -160,7 +160,30 @@
             android:textColor="#AF3DC3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/st_tv_edtpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Đổi Mật Khẩu"
+            android:textColor="#AF3DC3"
+            app:layout_constraintEnd_toStartOf="@+id/st_tv_edt"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="THÔNG TIN NGƯỜI DÙNG"
+        android:textColor="#D1DF4D"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        tools:layout_editor_absoluteY="38dp" />
 
     <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
 <!--        android:layout_width="match_parent"-->

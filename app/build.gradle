@@ -51,4 +51,7 @@ dependencies {
     //picaso fit anh
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation "com.github.bumptech.glide:glide:4.8.0" //glide
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1' //Circle SignImage View
+
 }

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C383CD"
+    tools:context=".auth.ChangePassWordActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:src="@color/white"
+
+        />
+    <TextView
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_user"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/border_item_function"
+        android:backgroundTint="@color/white"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_pw"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Nhập Password cũ "
+        android:textColorHint="#1E0C0C"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="60dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user"
+        app:passwordToggleEnabled="true"
+
+        app:passwordToggleTint="@color/purple_200">
+
+        <EditText
+            android:id="@+id/edt_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DAD9D5"
+
+            android:drawableStart="@drawable/ic_baseline_pass"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_newpw"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Nhập mới PassWord "
+        android:textColorHint="#0C0404"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="60dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_pw"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/purple_200">
+
+        <EditText
+            android:id="@+id/edt_newpw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DAD9D5"
+
+            android:drawableStart="@drawable/ic_baseline_pass"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_cfpw"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Xác nhận Password mới "
+        android:textColorHint="#2C1717"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="60dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_newpw"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/purple_200">
+
+        <EditText
+            android:id="@+id/edt_cfpw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#DAD9D5"
+            android:drawableStart="@drawable/ic_baseline_pass"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/til_cfpw"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="65dp">
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#6D0A7E"
+            android:text="Đồng Ý"
+            android:textColor="#EABF3A"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/bt_back"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#EABF3A"
+            android:text="Quay Lại"
+            android:textColor="#6D0A7E"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,8 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LyThuyetGiaoThong"
-        tools:replace="android:icon"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity
+            android:name=".activities.QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.ChangePassWordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.ProfileUpdateActivity"
+            android:exported="false" />
         <activity
             android:name=".activities.LuatActivity"
             android:exported="false" />
@@ -30,7 +39,7 @@
             android:name=".activities.LyThuyetActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.FirstScreenActivity"
+            android:name=".activities.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -39,7 +48,7 @@
             android:name=".activities.CreateActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.LoginActivity"
+            android:name=".activities.FirstScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

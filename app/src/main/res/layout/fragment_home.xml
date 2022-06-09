@@ -25,19 +25,20 @@
                 android:id="@+id/imageView"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_marginBottom="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
+
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.277"
                 app:srcCompat="@drawable/ic_baseline_account" />
 
             <TextView
                 android:id="@+id/home_nameus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hi! User"
+                android:text="User"
                 android:textColor="#F6F6F6"
                 android:textSize="30dp"
                 android:textStyle="bold"
@@ -49,7 +50,7 @@
                 android:id="@+id/home_gmailus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="voluongsyhoang@gmail"
+                android:text="Loading..."
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:textColor="#EAEAEA"

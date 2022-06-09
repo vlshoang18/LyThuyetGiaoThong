@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6A876C"
+    android:background="#5CBA60"
     tools:context=".activities.FirstScreenActivity">
 
     <pl.droidsonroids.gif.GifImageView
@@ -15,10 +15,12 @@
 
     <TextView
         android:id="@+id/textView2"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:hint="ỨNG DỤNG LÝ THUYẾT LÁI XE" />
+        android:textColorHint="#3C0E43"
+        android:hint="ỨNG DỤNG LÝ THUYẾT LÁI XE"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 </RelativeLayout>

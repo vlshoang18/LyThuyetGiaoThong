@@ -30,4 +30,8 @@ public class ApiClient {
         ApiUser apiUser = getRetrofit().create(ApiUser.class);
         return apiUser;
     }
+    public static ApiQuestion apiQuestion(){
+        ApiQuestion apiQuestion = getRetrofit().create(ApiQuestion.class);
+        return  apiQuestion;
+    }
 }

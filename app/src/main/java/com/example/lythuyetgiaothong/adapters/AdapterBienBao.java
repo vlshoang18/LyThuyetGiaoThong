@@ -46,7 +46,7 @@ public class AdapterBienBao extends RecyclerView.Adapter<AdapterBienBao.MyviewHo
         holder.tv2.setText(sign.getDescription());
 //       holder.img.setImageResource(sign.getImage().getUrl().
 
-        //mContext là tên mình đặt cho Context
+        //Context là tên mình đặt cho Context
                Picasso.with(context)
                .load(
                       sign.getImage().getUrl()). // cái này là dữ liệu api trả về

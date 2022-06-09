@@ -4,13 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DDDDDA"
     tools:context=".activities.LyThuyetActivity">
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_document"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LyThuyet"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="153dp" />
+        android:layout_marginTop="5dp"
+        android:background="#DDDDDA"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:listitem="@layout/itemlythuyet" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

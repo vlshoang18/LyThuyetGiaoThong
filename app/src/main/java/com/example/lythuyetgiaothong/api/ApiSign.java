@@ -22,4 +22,5 @@ public interface ApiSign {
     @GET("/trafficSign/getDetail/{id_sp}")
     Call<SignDetailModel> getsigndetail(@Path("id_sp") String id);
 
+
 }
