@@ -6,10 +6,17 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.PagerSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -95,13 +102,20 @@ public class QuestionActivity extends AppCompatActivity {
                 preview();
             }
         });
+        tvCount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog(Gravity.BOTTOM);
+
+            }   // on click den cau hoi
+        });
     }
 
     private void initUi() {
         btnPrevious = findViewById(R.id.btn_previous);
         btnNext = findViewById(R.id.btn_next);
         tvCount = findViewById(R.id.tv_count);
-        imgChange = findViewById(R.id.img_change);
+
     }
 
 
@@ -130,7 +144,54 @@ public class QuestionActivity extends AppCompatActivity {
         if (position < (count - 1))
             setCurrentItem(position + 1, true);
     }
-
+    //search câu hỏi
+    public void dialog(int gravity){
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_question);
+        Window window = dialog.getWindow();
+        if (window == null) {
+            return;
+        }
+        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        WindowManager.LayoutParams windowAtribute = window.getAttributes();
+        window.setAttributes(windowAtribute);
+        ImageView imgGo = dialog.findViewById(R.id.btn_go);
+        EditText edtPage = dialog.findViewById(R.id.edt_page_go);
+        TextView tvPage = dialog.findViewById(R.id.tv_page);
+        RecyclerView.Adapter adapter = mRecyclerView.getAdapter();
+        tvPage.setText("/ "+ String.valueOf(adapter.getItemCount()));
+        imgGo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (adapter == null)
+                    return;
+                String edt = String.valueOf(edtPage.getText());
+                String n = "";
+                int count = adapter.getItemCount();
+                if (edt.equals(n))
+                {
+                    Toast.makeText(QuestionActivity.this,"Chưa chọn câu cần đến",Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    int position =Integer.parseInt(edt);
+                    if (position < (count))
+                    {
+                        setCurrentItem(position-1, false);
+                        dialog.dismiss();
+                    }
+                    else {
+                        position = count;
+                        setCurrentItem(position-1,false);
+                        dialog.dismiss();
+                        Toast.makeText(QuestionActivity.this,count +" là câu cuối rồi",Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+        });
+        dialog.show();
+    }
     private int getCurrentItem() {
         return ((LinearLayoutManager) mRecyclerView.getLayoutManager())
                 .findFirstVisibleItemPosition();

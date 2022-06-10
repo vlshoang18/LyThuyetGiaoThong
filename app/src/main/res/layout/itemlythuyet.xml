@@ -3,6 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/itemlt"
+    android:layout_marginTop="25dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
     android:background="@drawable/border_item_function"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <ImageView
@@ -50,8 +53,8 @@
         android:id="@+id/tv_ct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Xem Chi Tiết"
-        android:textColor="@color/purple_700"
+        android:text="Xem Lý Thuyết"
+        android:textColor="#89189C"
         app:layout_constraintEnd_toEndOf="@+id/tv_item_lythuyet2"
         app:layout_constraintTop_toBottomOf="@+id/tv_item_lythuyet2"
         android:layout_marginTop="4dp"

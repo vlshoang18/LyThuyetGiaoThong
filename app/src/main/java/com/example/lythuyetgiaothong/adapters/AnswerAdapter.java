@@ -2,16 +2,20 @@ package com.example.lythuyetgiaothong.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.lythuyetgiaothong.R;
+import com.example.lythuyetgiaothong.activities.QuestionActivity;
 import com.example.lythuyetgiaothong.models.Answer;
 
 import java.util.List;
@@ -37,17 +41,21 @@ public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.AnswerView
     public void onBindViewHolder(@NonNull AnswerViewHolder holder, int position) {
         Answer currentItem = answers.get(position);
         holder.ans.setText(currentItem.getTitle());
-//        holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
-//            @SuppressLint("ResourceAsColor")
-//            @Override
-//            public void onClick(View v) {
-//                if (currentItem.getTrue() == "0") {
-//                    holder.ans.setTextColor(red);
-//                } else{
-//                    holder.ans.setTextColor(green);
-//                }
-//            }
-//        });
+        holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                if (currentItem.getTrue().equals("1")) {
+                    holder.ans.setBackgroundResource(R.color.green);
+
+                    Toast toast = Toast.makeText(v.getContext(), "Đáp án chính xác", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.TOP | Gravity.CENTER, 20, 30);
+                    toast.show();
+                } else{
+
+                }
+            }
+        });
 
     }
 

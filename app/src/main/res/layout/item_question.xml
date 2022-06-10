@@ -4,22 +4,25 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
+        android:layout_marginTop="80dp"
         android:id="@+id/tv_quest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Người lái xe không được vượt xe khác khi gặp trường hợp nào dưới đây?"
         android:textColor="@color/purple_700"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:textStyle="bold"
        app:layout_constraintTop_toTopOf="parent"/>
+
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_quest"
-        android:id="@+id/image"
-        />
+        app:layout_constraintTop_toBottomOf="@id/tv_quest" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/answer"
         android:layout_marginTop="5dp"
