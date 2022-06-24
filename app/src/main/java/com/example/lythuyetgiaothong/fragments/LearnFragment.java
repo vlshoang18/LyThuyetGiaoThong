@@ -73,7 +73,7 @@ public class LearnFragment extends Fragment {
         itemLearnModels.add(new ItemLearnModel(R.drawable.thisathach,"Thi Sát Hạch" ));
         itemLearnModels.add(new ItemLearnModel(R.drawable.lythuyet,"Học Lý Thuyết" ));
         itemLearnModels.add(new ItemLearnModel(R.drawable.bienbao,"Các Biển Báo" ));
-        itemLearnModels.add(new ItemLearnModel(R.drawable.luat,"Tra Cứu Luật" ));
+        itemLearnModels.add(new ItemLearnModel(R.drawable.luat,"Luật Giao Thông" ));
 
 
 

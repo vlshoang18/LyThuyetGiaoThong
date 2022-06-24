@@ -38,15 +38,17 @@
         android:id="@+id/tv_item_bienbao2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
         android:gravity="left"
         android:paddingLeft="1dp"
         android:paddingRight="1dp"
         android:paddingBottom="4dp"
         android:textColor="#656363"
-        android:layout_marginLeft="20dp"
-       app:layout_constraintLeft_toRightOf="@id/img_item_bienbao"
+
+        app:layout_constraintLeft_toRightOf="@id/img_item_bienbao"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_item_bienbao"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_item_bienbao" />
 
     <TextView
         android:id="@+id/tv_ct"
@@ -58,5 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_item_bienbao2"
         android:layout_marginTop="4dp"
         android:layout_marginRight="20dp"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

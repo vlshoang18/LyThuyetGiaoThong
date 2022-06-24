@@ -5,11 +5,125 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.ThiActivity">
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_thi"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+    <TextView
+        android:id="@+id/title_test"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textAlignment="center"
+        android:textColor="#860BBC"
+        android:textStyle="bold"
+        android:text="Đề thi A1"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contain_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title_test"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="25dp"
+        >
+        <TextView
+            android:id="@+id/tv_time_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/grey"
+            android:text="Thời gian làm bài: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv_time_test"
+            android:textColor="#C632E1"
+            android:text="19 phút"
+            android:textStyle="bold|italic"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contain_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/contain_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:id="@+id/tv_total_quest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/grey"
+            android:text="Tổng số câu hỏi:  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv_total_quest"
+            android:textColor="#C632E1"
+            android:text="25 câu"
+            android:textStyle="bold|italic"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contain_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/contain_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:id="@+id/tv_minimum_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/grey"
+            android:text="Điểm tối thiểu đạt:   "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv_minimum_pass"
+            android:textColor="#C632E1"
+            android:text="21/25 câu"
+            android:textStyle="bold|italic"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_test_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/contain_3"
+        android:layout_margin="35dp"
+        android:background="@drawable/shape"
+        android:text="Bắt đầu"
+        android:textSize="20sp"
+        app:backgroundTint="#D152E6"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/btn_test_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_test_start"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="35dp"
+        android:background="@drawable/shape"
+
+        app:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -85,7 +85,7 @@ public class AdapterLyThuyet extends RecyclerView.Adapter<AdapterLyThuyet.Docume
             super(itemView);
             img = itemView.findViewById(R.id.img_item_lythuyet);
             tv = itemView.findViewById(R.id.tv_item_lythuyet);
-            tv2 = itemView.findViewById(R.id.tv_item_lythuyet2);
+
             tv3 = itemView.findViewById(R.id.tv_ct);
             constraintLayout = itemView.findViewById(R.id.itemlt);
 

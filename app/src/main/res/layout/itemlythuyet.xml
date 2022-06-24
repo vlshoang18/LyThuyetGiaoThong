@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/itemlt"
@@ -19,35 +20,24 @@
         app:layout_constraintLeft_toLeftOf="parent"
 
         />
+
     <TextView
         android:id="@+id/tv_item_lythuyet"
-        android:paddingBottom="4dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@+id/img_item_lythuyet"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="13dp"
-        android:layout_marginLeft="20dp"
-        android:textStyle="italic|bold"
-
-        android:gravity="center"
-        android:textColor="#656363"
-        />
-
-    <TextView
-        android:id="@+id/tv_item_lythuyet2"
+        android:textSize="20sp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textStyle="bold"
         android:paddingLeft="1dp"
         android:paddingRight="1dp"
         android:paddingBottom="4dp"
-        android:textColor="#656363"
-
-        android:layout_marginLeft="20dp"
-        app:layout_constraintLeft_toRightOf="@id/img_item_lythuyet"
+        android:textColor="@color/black"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_item_lythuyet"/>
+        app:layout_constraintLeft_toRightOf="@+id/img_item_lythuyet"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/tv_ct"
@@ -55,8 +45,8 @@
         android:layout_height="wrap_content"
         android:text="Xem Lý Thuyết"
         android:textColor="#89189C"
-        app:layout_constraintEnd_toEndOf="@+id/tv_item_lythuyet2"
-        app:layout_constraintTop_toBottomOf="@+id/tv_item_lythuyet2"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_lythuyet"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_lythuyet"
         android:layout_marginTop="4dp"
         android:layout_marginRight="20dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

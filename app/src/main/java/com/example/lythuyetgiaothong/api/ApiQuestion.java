@@ -1,5 +1,6 @@
 package com.example.lythuyetgiaothong.api;
 
+import com.example.lythuyetgiaothong.models.QuestionAllResponse;
 import com.example.lythuyetgiaothong.models.QuestionCategoryResponse;
 import com.example.lythuyetgiaothong.models.TheoryAllModel;
 
@@ -14,4 +15,6 @@ public interface ApiQuestion {
     Call<TheoryAllModel> getall();
     @GET("learn/getLearnFollowIdCategory/{id}")
     Call<QuestionCategoryResponse> getChapter(@Path("id") String id);
+    @GET("learn/getAll")
+    Call<QuestionAllResponse> getAllQuestion();
 }

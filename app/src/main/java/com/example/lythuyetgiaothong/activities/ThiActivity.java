@@ -2,6 +2,7 @@ package com.example.lythuyetgiaothong.activities;
 import com.example.lythuyetgiaothong.R;
 import com.example.lythuyetgiaothong.adapters.AdapterThi;
 import com.example.lythuyetgiaothong.models.ItemThiModel;
+import com.example.lythuyetgiaothong.utils.Contants;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -9,50 +10,73 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Dialog;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class ThiActivity extends AppCompatActivity {
-    private ArrayList<ItemThiModel> itemThiModels;
-    private RecyclerView recyclerView;
-    private AdapterThi adapterThi;
-    private LinearLayoutManager linearLayoutManager;
-
-
+    private Button start,result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thi);
-        recyclerView = findViewById(R.id.rv_thi);
-        itemThiModels = new ArrayList<>();
-
-        setAdapter();
-
-    }
-    private void setAdapter() {
-        adapterThi = new AdapterThi(itemThiModels,ThiActivity.this);
-
-        linearLayoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(adapterThi);
-        setIteminfo();
-        adapterThi.notifyDataSetChanged();
+        initUi();
+        startTest();
+        showResult();
     }
 
+    private void showResult() {
+        result.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences sharedPreferences = ThiActivity.this.getSharedPreferences("MySharedPref", Context.MODE_PRIVATE);
+                if (sharedPreferences.getString(Contants.email, "").isEmpty()){
 
-    private void setIteminfo() {
+                }else{
+                    Intent intent = new Intent(ThiActivity.this, TestResultActivity.class);
+                    intent.putExtra("act","testAct");
+                    startActivity(intent);
+                }
 
+            }
+        });
+    }
 
-        itemThiModels.add(new ItemThiModel(R.drawable.img_1,"Đề Thi 1" ));
-        itemThiModels.add(new ItemThiModel(R.drawable.img_2,"Đề Thi 2" ));
-        itemThiModels.add(new ItemThiModel(R.drawable.img_3,"Đề Thi 3" ));
-        itemThiModels.add(new ItemThiModel(R.drawable.img_4,"Đề Thi 4" ));
-        itemThiModels.add(new ItemThiModel(R.drawable.img_1,"Đề Thi 5" ));
-        itemThiModels.add(new ItemThiModel(R.drawable.img_2,"Đề Thi 6" ));
-        itemThiModels.add(new ItemThiModel(R.drawable.img_3,"Đề Thi 7" ));
+    private void startTest() {
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              {
+                    Intent intent = new Intent(ThiActivity.this, TestDoingActivity.class);
+                    startActivity(intent);
+                }
+
+            }
+        });
 
     }
+
+
+
+
+
+    private void initUi() {
+        start = findViewById(R.id.btn_test_start);
+        result = findViewById(R.id.btn_test_result);
+
+    }
+
 }

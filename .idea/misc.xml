@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable-ldpi/border_blue.xml" value="0.1505" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable-ldpi/border_red.xml" value="0.1505" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable-ldpi/border_white.xml" value="0.1505" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable-ldpi/ic_baseline_arrow_drop_down_24.xml" value="0.1475" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable-ldpi/ic_baseline_arrow_drop_up_24.xml" value="0.1475" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable-v24/border_blue.xml" value="0.1505" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable/border_blue.xml" value="0.1505" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable/border_green.xml" value="0.1505" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable/border_item_function.xml" value="0.191" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable/border_red.xml" value="0.1505" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable/border_white.xml" value="0.1505" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable/home_background.xml" value="0.1475" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable/ic_baseline_account.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable/ic_baseline_address.xml" value="0.1475" />
@@ -17,6 +25,7 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable/top_background.xml" value="0.2085" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/drawable/top_backgroundhome.xml" value="0.1475" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_bien_bao.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_car.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_change_pass_word.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_create.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_detail.xml" value="0.2" />
@@ -26,12 +35,21 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_luat.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_ly_thuyet.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_mo_to.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_moto.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_other.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_profile_update.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_question.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_sign_ct.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_slider.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_test_doing.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_test_doing1.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_test_history.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_test_result.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/activity_thi.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/dialog_question.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/dialog_result.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/dialog_test_back.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/dialog_user_back.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/fragment_bien_bao_1.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/fragment_bien_bao_2.xml" value="0.25" />
@@ -48,8 +66,10 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/fragment_setting.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/fragment_test.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/item_answer.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/item_list_law.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/item_question.xml" value="0.25" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/itembienbao.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/item_result.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/itembienbao.xml" value="0.6" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/itemcovid.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/itemhome.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/LyThuyetGiaoThong/app/src/main/res/layout/itemlearn.xml" value="0.1" />

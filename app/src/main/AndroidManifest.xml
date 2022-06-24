@@ -15,6 +15,21 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:icon">
         <activity
+            android:name=".activities.TestDoingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.TestResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OtherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MoToActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CarActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.QuestionActivity"
             android:exported="false" />
         <activity
